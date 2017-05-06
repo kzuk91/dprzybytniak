@@ -29,6 +29,7 @@
 
     <!-- Mapping classes -->
     <mapping class="pl.model.entity.License"/>
+    <mapping class="pl.model.entity.Authorization"/>
 
   </session-factory>
 </hibernate-configuration>
