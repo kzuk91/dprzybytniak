@@ -2,7 +2,8 @@ package pl.codebind;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+
+import static javax.swing.JOptionPane.showMessageDialog;
 
 /**
  * Created by Daniel Przybytniak on 04.05.2017.
@@ -16,10 +17,10 @@ public class App {
     public App() {
 
         addButton.addActionListener((ActionEvent e) -> {
-            JOptionPane.showMessageDialog(null, "Dodałeś licencje");
+            showMessageDialog(null, "Dodałeś licencje");
         });
         removeButton.addActionListener((ActionEvent e) -> {
-            JOptionPane.showMessageDialog(null, "Usunąłeś bazę danych... ITS A PRANK BRO");
+            showMessageDialog(null, "Usunąłeś bazę danych... ITS A PRANK BRO");
         });
     }
 
