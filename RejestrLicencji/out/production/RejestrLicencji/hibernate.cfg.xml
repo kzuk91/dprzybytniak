@@ -4,15 +4,14 @@
     "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
   <session-factory>
-
     <!-- JDBC connection settings -->
-    <property name="connection.url">jdbc:mysql://localhost:3306/pracinz</property>
+    <property name="connection.url">jdbc:mysql://localhost/pracinz</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="connection.username">root</property>
-    <property name="connection.password">123zuk45</property>
+    <property name="connection.username"></property>
+    <property name="connection.password">123321</property>
 
     <!-- DB schema will be updated if needed -->
-    <property name="hbm2ddl.auto">create</property>
+    <property name="hibernate.hbm2ddl.auto">create</property>
 
     <!-- JDBC connection pool, use Hibernate internal connection pool -->
     <property name="connection.pool_size">5</property>
@@ -21,14 +20,15 @@
     <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
     <!-- Enable Hibernate's automatic session context management -->
-    <property name="current_session_context_class">thread</property>
+      <!-- <property name="current_session_context_class">thread</property>-->
 
-    <!-- Display and format all executed SQL to stdout -->
+      <!-- Display and format all executed SQL to stdout -->
     <property name="show_sql">true</property>
     <property name="format_sql">true</property>
+    <property name="hibernate.connection.autocommit">true</property>
 
     <!-- Mapping classes -->
-    <mapping class="pl.model.entity.License"/>
+    <mapping class="pl.model.entity.License">
     <mapping class="pl.model.entity.Authorization"/>
 
   </session-factory>

@@ -1,7 +1,6 @@
 package pl.model.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Date;
 
 /**
@@ -24,6 +23,7 @@ public class License {
     private String description;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public String getId() {
         return id;
     }
