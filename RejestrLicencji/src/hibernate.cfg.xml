@@ -7,11 +7,9 @@
     <!-- JDBC connection settings -->
     <property name="connection.url">jdbc:mysql://localhost/pracinz</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="connection.username"></property>
-    <property name="connection.password">123321</property>
 
     <!-- DB schema will be updated if needed -->
-    <property name="hibernate.hbm2ddl.auto">create</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
 
     <!-- JDBC connection pool, use Hibernate internal connection pool -->
     <property name="connection.pool_size">5</property>
@@ -26,10 +24,12 @@
     <property name="show_sql">true</property>
     <property name="format_sql">true</property>
     <property name="hibernate.connection.autocommit">true</property>
+    <mapping resource="pl/model/entity/AuthenticationEntity.hbm.xml"/>
+    <mapping class="pl.model.entity.AuthenticationEntity"/>
+    <mapping class="pl.model.entity.LicenseEntity"/>
+    <mapping resource="pl/model/entity/LicenseEntity.hbm.xml"/>
 
     <!-- Mapping classes -->
-    <mapping class="pl.model.entity.License">
-    <mapping class="pl.model.entity.Authorization"/>
 
   </session-factory>
 </hibernate-configuration>

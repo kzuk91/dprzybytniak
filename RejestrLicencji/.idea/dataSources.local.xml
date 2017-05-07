@@ -7,9 +7,9 @@
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
-      <user-name>root</user-name>
-      <user-password>df9bdf98df99dfd0dfdfdfc1df9edf9f</user-password>
-      <resolve-scope>pracinz:</resolve-scope>
+      <user-name>admin</user-name>
+      <user-password>df9bdf98df99df99df98df9b</user-password>
+      <resolve-scope>pracinz:*|mysql:</resolve-scope>
     </data-source>
   </component>
 </project>
