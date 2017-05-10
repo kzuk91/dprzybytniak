@@ -3,7 +3,7 @@ package wat.edu.pl.pz.gui.front.listeners;
 import wat.edu.pl.pz.gui.back.dao.LicenseDAO;
 import wat.edu.pl.pz.gui.back.entity.License;
 import wat.edu.pl.pz.gui.back.entity.Provider;
-import wat.edu.pl.pz.gui.front.panels.ViewInvoice;
+import wat.edu.pl.pz.gui.front.panels.ManageLicenses;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,9 +12,9 @@ import java.util.Date;
 
 public class ViewInvoiceKeyHandler implements ActionListener {
 
-	ViewInvoice vi;
+	ManageLicenses vi;
 	LicenseDAO licenseDAO = new LicenseDAO();
-	public ViewInvoiceKeyHandler(ViewInvoice vi){
+	public ViewInvoiceKeyHandler(ManageLicenses vi){
 		this.vi=vi;
 	}
 	@Override

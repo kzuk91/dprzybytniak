@@ -2,9 +2,9 @@ package wat.edu.pl.pz.gui.front.frames;
 
 import wat.edu.pl.pz.gui.back.services.SessionService;
 import wat.edu.pl.pz.gui.front.panels.AddLicense;
-import wat.edu.pl.pz.gui.front.panels.AddNewProduct;
+import wat.edu.pl.pz.gui.front.panels.YourLicenses;
 import wat.edu.pl.pz.gui.front.panels.AddUser;
-import wat.edu.pl.pz.gui.front.panels.ViewInvoice;
+import wat.edu.pl.pz.gui.front.panels.ManageLicenses;
 
 import javax.swing.*;
 import java.awt.*;
@@ -44,7 +44,7 @@ public class ApplicationWindow extends JFrame {
 
 		JLabel title = new JLabel("License Managment");
 		title.setFont(new Font("Tahoma", Font.BOLD, 20));
-		title.setBounds(333, 12, 150, 27);
+		title.setBounds(333, 12, 250, 27);
 		panel.add(title);
 		trademark.setBounds(Toolkit.getDefaultToolkit().getScreenSize().width - 80,
 				Toolkit.getDefaultToolkit().getScreenSize().height - 35, 100, 14);
@@ -61,16 +61,18 @@ public class ApplicationWindow extends JFrame {
 			if (ss.getRole().equals("Administrator"))
 				tabbedPane.addTab("Nowa licencja", addLicense);
 
-		AddNewProduct addNewProduct = new AddNewProduct();
-		tabbedPane.addTab("Dodaj licencję", addNewProduct);
+		YourLicenses yourLicenses = new YourLicenses();
+		tabbedPane.addTab("Twoje licencje", yourLicenses);
 
-		ViewInvoice viewInvoice = new ViewInvoice();
-		tabbedPane.addTab("Lista licencji", viewInvoice);
+		ManageLicenses manageLicenses = new ManageLicenses();
+		if (!ss.getRole().isEmpty())
+			if (ss.getRole().equals("Administrator"))
+				tabbedPane.addTab("Zarządzaj licencjami", manageLicenses);
 
 		AddUser addUser = new AddUser();
 		if (!ss.getRole().isEmpty())
 			if (ss.getRole().equals("Administrator"))
-				tabbedPane.addTab("Dodaj nowego u�ytkownika", addUser);
+				tabbedPane.addTab("Dodaj nowego użytkownika", addUser);
 
 		setVisible(true);
 	}
