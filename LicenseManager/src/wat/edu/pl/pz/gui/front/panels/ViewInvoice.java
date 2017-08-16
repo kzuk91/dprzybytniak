@@ -1,17 +1,8 @@
 package wat.edu.pl.pz.gui.front.panels;
 
-import java.awt.Color;
-import java.awt.Font;
-
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTable;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
+import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-
-import wat.edu.pl.pz.gui.front.listeners.ViewInvoiceKeyHandler;
+import java.awt.*;
 
 public class ViewInvoice extends JPanel {
 
@@ -25,7 +16,7 @@ public class ViewInvoice extends JPanel {
 	public JTextField cityValue;
 	public JTextField dateValue;
 	public JTable table;
-	public String[] columns = {"L.p.","Nazwa produktu","Iloœæ"};
+	public String[] columns = {"L.p.","Nazwa produktu","Iloï¿½ï¿½"};
 	public JTextField billValue;
 	public JTextField textField;
 	public DefaultTableModel dtm;
@@ -53,9 +44,8 @@ public class ViewInvoice extends JPanel {
 		invoiceNumberValue.setBounds(110, 5, 120, 20);
 		upperLeftPanel.add(invoiceNumberValue);
 		invoiceNumberValue.setColumns(10);
-		invoiceNumberValue.addActionListener(new ViewInvoiceKeyHandler(this));
-		
-		JPanel upperCenterPanel = new JPanel();
+
+        JPanel upperCenterPanel = new JPanel();
 		upperCenterPanel.setBackground(Color.DARK_GRAY);
 		upperCenterPanel.setBounds(255, 25, 150, 150);
 		add(upperCenterPanel);

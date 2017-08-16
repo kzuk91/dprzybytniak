@@ -1,5 +1,7 @@
 package wat.edu.pl.pz.gui.front.listeners;
 
+import org.apache.commons.lang3.StringUtils;
+import wat.edu.pl.pz.gui.back.Utils.Constants;
 import wat.edu.pl.pz.gui.back.dao.AddressDAO;
 import wat.edu.pl.pz.gui.back.dao.LicenseDAO;
 import wat.edu.pl.pz.gui.back.dao.PostalCodeDAO;
@@ -9,6 +11,7 @@ import wat.edu.pl.pz.gui.back.entity.Provider;
 import wat.edu.pl.pz.gui.front.frames.ErrorPopup;
 import wat.edu.pl.pz.gui.front.panels.AddLicense;
 
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -27,22 +30,55 @@ public class AddLicenseButtonHandler implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == ai.writeButton) {
+			String errorMessage = "";
+			int lineCounter = 0;
 			if (ai.providerNameValue.getText().isEmpty()) {
-				new ErrorPopup("Nazwa wytwórcy nie może być pusta");
-			} else if (ai.providerNumberValue.getText().isEmpty()) {
-				new ErrorPopup("ID wytwórcy nie może być pusty");
-			} else if (ai.licenseNumberValue.getText().isEmpty()){
-				new ErrorPopup("Numer licencji nie może być pusty");
-			} else if (ai.licenseNameValue.getText().isEmpty()) {
-				new ErrorPopup("Nazwa licencji nie może być pusta");
-			} else if (ai.instalationTimeValue.getText().isEmpty()) {
-				new ErrorPopup("Czas instalacji nie może być pusty");
-			} else if (ai.validFromValue==null || ai.validToValue==null) {
-				new ErrorPopup("Data ważności licencji nie może być pusta");
-			} else if (ai.versionValue.getText().isEmpty()) {
-				new ErrorPopup("Wersja licencji nie może być pusta");
-			} else if (ai.descriptionValue.getText().isEmpty()) {
-				new ErrorPopup("Opis licencji nie może być pusty");
+				ai.providerNameValue.setBackground(Color.red);
+				errorMessage = errorMessage + Constants.BREAK_LINE + ++lineCounter + Constants.COMA + Constants.PROVIDER_NAME_EMPTY_ERROR;
+				//new ErrorPopup("Nazwa wytwórcy nie może być pusta");
+			}
+			if (ai.providerNumberValue.getText().isEmpty()) {
+				ai.providerNumberValue.setBackground(Color.red);
+				errorMessage = errorMessage + Constants.BREAK_LINE + ++lineCounter + Constants.COMA + Constants.PROVIDER_NUMBER_EMPTY_ERROR;
+				//new ErrorPopup("ID wytwórcy nie może być pusty");
+			}
+			if (ai.licenseNumberValue.getText().isEmpty()) {
+				ai.licenseNumberValue.setBackground(Color.red);
+				errorMessage = errorMessage + Constants.BREAK_LINE + ++lineCounter + Constants.COMA + Constants.LICENSE_NUMBER_EMPTY_ERROR;
+				//new ErrorPopup("Numer licencji nie może być pusty");
+			}
+			if (ai.licenseNameValue.getText().isEmpty()) {
+				ai.licenseNameValue.setBackground(Color.red);
+				errorMessage = errorMessage + Constants.BREAK_LINE + ++lineCounter + Constants.COMA + Constants.LICENSE_NAME_EMPTY_ERROR;
+				//new ErrorPopup("Nazwa licencji nie może być pusta");
+			}
+			if (ai.instalationTimeValue.getText().isEmpty()) {
+				ai.instalationTimeValue.setBackground(Color.red);
+				errorMessage = errorMessage + Constants.BREAK_LINE + ++lineCounter + Constants.COMA + Constants.INSTALATION_TIME_EMPTY_ERROR;
+				//new ErrorPopup("Czas instalacji nie może być pusty");
+			}
+			if (ai.validFromValue == null || ai.validToValue == null) {
+				if (ai.validFromValue == null)
+					ai.validFromValue.setBackground(Color.red);
+				if (ai.validToValue == null)
+					ai.validToValue.setBackground(Color.red);
+				errorMessage = errorMessage + Constants.BREAK_LINE + ++lineCounter + Constants.COMA + Constants.EXPIRATION_DATA_EMPTY_ERROR;
+				//new ErrorPopup("Data ważności licencji nie może być pusta");
+			}
+			if (ai.versionValue.getText().isEmpty()) {
+				ai.versionValue.setBackground(Color.red);
+				errorMessage = errorMessage + Constants.BREAK_LINE + ++lineCounter + Constants.COMA + Constants.LICENSE_VERSION_EMPTY_ERROR;
+				//new ErrorPopup("Wersja licencji nie może być pusta");
+			}
+			if (ai.descriptionValue.getText().isEmpty()) {
+				ai.descriptionValue.setBackground(Color.red);
+				errorMessage = errorMessage + Constants.BREAK_LINE + ++lineCounter + Constants.COMA + Constants.LICENSE_DESCRIPTION_EMPTY_ERROR;
+				//new ErrorPopup("Opis licencji nie może być pusty");
+			}
+
+			if (StringUtils.isNotEmpty(errorMessage)) {
+				errorMessage = Constants.HTML_OPEN + Constants.ERROR_LIST + Constants.BREAK_LINE + errorMessage + Constants.HTML_CLOSE;
+				new ErrorPopup(errorMessage, lineCounter);
 			} else {
 				License license = new License();
 				Provider provider = new Provider();

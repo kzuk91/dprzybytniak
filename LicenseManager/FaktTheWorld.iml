@@ -1,19 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="file://C:\Projekt\dprzybytniak\LicenseManager\lib" />
+    <libelement value="file://lib/hibernate-release-5.0.7.Final/lib/hibernate-release-5.0.7.Final — skrót.lnk" />
+    <libelement value="file://$MODULE_DIR$/../../zdarzeniowe/FaktTheWorld/lib/hibernate-release-5.0.12.Final" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
   <component name="FacetManager">
     <facet type="jpa" name="JPA">
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="myDatabase" />
+        </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/META-INF/persistence.xml" />
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" inherit-compiler-output="false">
+  <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/bin" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/res" type="java-resource" />
+    </content>
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library" exported="">
+      <library name="lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="hibernate-release-5.0.7.Final — skrót.lnk">
+        <CLASSES>
+          <root url="file://lib/hibernate-release-5.0.7.Final/lib/hibernate-release-5.0.7.Final — skrót.lnk" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="hibernate-release-5.0.12.Final">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../zdarzeniowe/FaktTheWorld/lib/hibernate-release-5.0.12.Final" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="jaf-1.1" level="project" />
   </component>
+  <component name="POM File Configuration" pomFile="" />
 </module>

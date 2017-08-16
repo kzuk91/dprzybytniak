@@ -1,8 +1,5 @@
 package wat.edu.pl.pz.gui.front.listeners;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import wat.edu.pl.pz.gui.back.dao.PasswordDAO;
 import wat.edu.pl.pz.gui.back.dao.UsersDAO;
 import wat.edu.pl.pz.gui.back.entity.Password;
@@ -11,6 +8,9 @@ import wat.edu.pl.pz.gui.back.services.EncryptingService;
 import wat.edu.pl.pz.gui.back.services.MailService;
 import wat.edu.pl.pz.gui.front.frames.ErrorPopup;
 import wat.edu.pl.pz.gui.front.frames.ResetPassword;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ResetPasswordButtonHandler implements ActionListener {
 
@@ -28,8 +28,8 @@ public class ResetPasswordButtonHandler implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == rp.sendButton) {
 			if (rp.emailValue.getText().isEmpty()) {
-				new ErrorPopup("Adres email nie mo¿e byæ pusty");
-			}
+                new ErrorPopup("Adres email nie moÅ¼e byÄ‡ pusty");
+            }
 			else {
 				Users user = userDAO.findByLogin(rp.loginValue.getText());
 				if(!user.getEmail().equals(rp.emailValue.getText())){

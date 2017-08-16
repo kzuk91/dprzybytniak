@@ -1,10 +1,5 @@
 package wat.edu.pl.pz.gui.front.listeners;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.persistence.NoResultException;
-
 import wat.edu.pl.pz.gui.back.dao.UsersDAO;
 import wat.edu.pl.pz.gui.back.entity.Users;
 import wat.edu.pl.pz.gui.back.services.EncryptingService;
@@ -13,6 +8,10 @@ import wat.edu.pl.pz.gui.front.frames.ApplicationWindow;
 import wat.edu.pl.pz.gui.front.frames.ErrorPopup;
 import wat.edu.pl.pz.gui.front.frames.MainWindow;
 import wat.edu.pl.pz.gui.front.frames.ResetPassword;
+
+import javax.persistence.NoResultException;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class MainWindowButtonHandler implements ActionListener {
 
@@ -40,15 +39,15 @@ public class MainWindowButtonHandler implements ActionListener {
 						mw.setVisible(false);
 						ApplicationWindow.getInstance();
 					} else {
-						new ErrorPopup("Wpisz poprawne has≥o");
-					}
+                        new ErrorPopup("Wpisz poprawne has≈Ço");
+                    }
 
 				} catch (NoResultException ex) {
-					new ErrorPopup("Podany uøytkownik nie istnieje");
-				}
+                    new ErrorPopup("Podany u≈ºytkownik nie istnieje");
+                }
 			} else {
-				new ErrorPopup("Login i has≥o sπ wymagane");
-			}
+                new ErrorPopup("Login i has≈Ço sƒÖ wymagane");
+            }
 		}
 		if (e.getSource() == mw.resetPasswordButton) {
 			try {
@@ -56,8 +55,8 @@ public class MainWindowButtonHandler implements ActionListener {
 				Users user = usersDAO.findByLogin(mw.loginValue.getText());
 				new ResetPassword(user.getLogin());
 			} catch (NoResultException ex) {
-				new ErrorPopup("Uøytkownik o podanym loginie nie istnieje");
-			}
+                new ErrorPopup("U≈ºytkownik o podanym loginie nie istnieje");
+            }
 
 		}
 	}

@@ -3,9 +3,11 @@ package wat.edu.pl.pz.gui.front.panels;
 import org.jdesktop.swingx.JXDatePicker;
 import wat.edu.pl.pz.gui.front.listeners.AddLicenseButtonHandler;
 import wat.edu.pl.pz.gui.front.listeners.AddLicenseStateChangeHandler;
+import wat.edu.pl.pz.gui.front.listeners.MouseClickedValueListener;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Calendar;
 import java.util.Date;
 
 public class AddLicense extends JPanel {
@@ -110,21 +112,25 @@ public class AddLicense extends JPanel {
         providerNameValue.setBounds(132, 24, 483, 20);
 		upperPanel.add(providerNameValue);
         providerNameValue.setColumns(10);
+		providerNameValue.addMouseListener(new MouseClickedValueListener(providerNameValue));
 
         providerNumberValue = new JTextField();
         providerNumberValue.setBounds(132, 68, 483, 20);
 		upperPanel.add(providerNumberValue);
         providerNumberValue.setColumns(10);
+		providerNumberValue.addMouseListener(new MouseClickedValueListener(providerNumberValue));
 
         licenseNumberValue = new JTextField();
         licenseNumberValue.setBounds(132, 112, 483, 20);
 		upperPanel.add(licenseNumberValue);
         licenseNumberValue.setColumns(10);
+		licenseNumberValue.addMouseListener(new MouseClickedValueListener(licenseNumberValue));
 
 		licenseNameValue = new JTextField();
         licenseNameValue.setBounds(132, 156, 483, 20);
 		upperPanel.add(licenseNameValue);
         licenseNameValue.setColumns(10);
+		licenseNameValue.addMouseListener(new MouseClickedValueListener(licenseNameValue));
 
 		JPanel bottonPanel = new JPanel();
 		bottonPanel.setBounds(200, 260, 653, 250);
@@ -165,27 +171,36 @@ public class AddLicense extends JPanel {
 		instalationTimeValue.setBounds(132, 25, 483, 20);
 		bottonPanel.add(instalationTimeValue);
 		instalationTimeValue.setColumns(10);
+		instalationTimeValue.addMouseListener(new MouseClickedValueListener(instalationTimeValue));
 
 		validFromValue = new JXDatePicker();
 		validFromValue.setBounds(132, 70, 483, 20);
         validFromValue.setFormats("yyyy-mm-dd hh:mm:ss");
         validFromValue.setDate(new Date());
-        validFromValue.getEditor().setEnabled(false);
+		validFromValue.getMonthView().setLowerBound(new Date());
+		validFromValue.getEditor().setEnabled(false);
         validFromValue.getEditor().setDisabledTextColor(Color.black);
 		bottonPanel.add(validFromValue);
+		validFromValue.addMouseListener(new MouseClickedValueListener(validFromValue));
 
 		validToValue = new JXDatePicker();
 		validToValue.setBounds(132, 115, 483, 20);
         validToValue.setFormats("yyyy-mm-dd hh:mm:ss");
-		validToValue.setDate(new Date());
-        validToValue.getEditor().setEnabled(false);
+		Calendar c = Calendar.getInstance();
+		c.setTime(new Date());
+		c.add(Calendar.YEAR, 1);
+		validToValue.setDate(c.getTime());
+		validToValue.getMonthView().setLowerBound(new Date());
+		validToValue.getEditor().setEnabled(false);
         validToValue.getEditor().setDisabledTextColor(Color.black);
 		bottonPanel.add(validToValue);
+		validToValue.addMouseListener(new MouseClickedValueListener(validToValue));
 
 		versionValue = new JTextField();
 		versionValue.setBounds(132, 160, 483, 20);
 		bottonPanel.add(versionValue);
 		versionValue.setColumns(10);
+		versionValue.addMouseListener(new MouseClickedValueListener(versionValue));
 
 		descriptionValue = new JTextArea();
 		descriptionValue.setBounds(132, 205, 483, 20);
@@ -193,6 +208,7 @@ public class AddLicense extends JPanel {
 		descriptionValue.setColumns(10);
 		bottonPanel.setOpaque(false);
 		bottonPanel.setBorder(null);
+		descriptionValue.addMouseListener(new MouseClickedValueListener(descriptionValue));
 
 
 		// listenery

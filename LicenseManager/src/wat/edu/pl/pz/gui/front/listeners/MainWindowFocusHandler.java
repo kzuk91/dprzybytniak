@@ -1,9 +1,9 @@
 package wat.edu.pl.pz.gui.front.listeners;
 
+import wat.edu.pl.pz.gui.front.frames.MainWindow;
+
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
-
-import wat.edu.pl.pz.gui.front.frames.MainWindow;
 
 public class MainWindowFocusHandler implements FocusListener {
 
@@ -30,8 +30,8 @@ public class MainWindowFocusHandler implements FocusListener {
 		}
 		if (e.getSource() == mw.passwordValue) {
 			if (new String(mw.passwordValue.getPassword()).isEmpty())
-				mw.passwordValue.setText("haslo...");
-		}
+                mw.passwordValue.setText("hasło...");
+        }
 	}
 
 }

@@ -1,16 +1,6 @@
 package wat.edu.pl.pz.gui.front.listeners;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.persistence.NoResultException;
-
-import wat.edu.pl.pz.gui.back.dao.AddressDAO;
-import wat.edu.pl.pz.gui.back.dao.EmployeeDAO;
-import wat.edu.pl.pz.gui.back.dao.PasswordDAO;
-import wat.edu.pl.pz.gui.back.dao.PostalCodeDAO;
-import wat.edu.pl.pz.gui.back.dao.RoleDAO;
-import wat.edu.pl.pz.gui.back.dao.UsersDAO;
+import wat.edu.pl.pz.gui.back.dao.*;
 import wat.edu.pl.pz.gui.back.entity.Address;
 import wat.edu.pl.pz.gui.back.entity.Employee;
 import wat.edu.pl.pz.gui.back.entity.Users;
@@ -18,6 +8,10 @@ import wat.edu.pl.pz.gui.back.services.EncryptingService;
 import wat.edu.pl.pz.gui.back.services.MailService;
 import wat.edu.pl.pz.gui.front.frames.ErrorPopup;
 import wat.edu.pl.pz.gui.front.panels.AddUser;
+
+import javax.persistence.NoResultException;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class AddUserButtonHandler implements ActionListener {
 	AddUser nu;
@@ -37,31 +31,31 @@ public class AddUserButtonHandler implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == nu.addUserButton) {
 			if (nu.loginValue.getText().isEmpty()) {
-				new ErrorPopup("Login nie mo¿e byæ pusty");
-			} else if (nu.nameValue.getText().isEmpty()) {
-				new ErrorPopup("Imiê nie mo¿e byæ puste");
-			} else if (nu.surnameValue.getText().isEmpty()) {
-				new ErrorPopup("Nazwisko nie mo¿e byæ puste");
-			} else if (nu.emailValue.getText().isEmpty()) {
-				new ErrorPopup("email nie mo¿e byæ pusty");
-			} else if (nu.idValue.getText().isEmpty()) {
-				new ErrorPopup("Pesel nie mo¿e byæ pusty");
-			} else if (nu.streetValue.getText().isEmpty()) {
-				new ErrorPopup("Nazwa ulicy nie mo¿e byæ pusta");
-			} else if (nu.houseNumberValue.getText().isEmpty()) {
-				new ErrorPopup("Numer domu nie mo¿e byæ pusty");
-			} else if (nu.cityValue.getText().isEmpty()) {
-				new ErrorPopup("Nazwa miejscowoœci nie mo¿e byæ pusty");
-			} else if (nu.postCodeValue.getText().isEmpty()) {
-				new ErrorPopup("Numer kodu nie mo¿e byæ pusty");
-			} else {
+                new ErrorPopup("Login nie moÅ¼e byÄ‡ pusty");
+            } else if (nu.nameValue.getText().isEmpty()) {
+                new ErrorPopup("ImiÄ™ nie moÅ¼ee byÄ‡ puste");
+            } else if (nu.surnameValue.getText().isEmpty()) {
+                new ErrorPopup("Nazwisko nie mmoÅ¼e byÄ‡ puste");
+            } else if (nu.emailValue.getText().isEmpty()) {
+                new ErrorPopup("Email nie moÅ¼e byÄ‡ pusty");
+            } else if (nu.idValue.getText().isEmpty()) {
+                new ErrorPopup("Pesel nie moÅ¼e byÄ‡ pusty");
+            } else if (nu.streetValue.getText().isEmpty()) {
+                new ErrorPopup("Nazwa ulicy nie moÅ¼e byÄ‡ pusta");
+            } else if (nu.houseNumberValue.getText().isEmpty()) {
+                new ErrorPopup("Numer domu nie moÅ¼e byÄ‡ pusty");
+            } else if (nu.cityValue.getText().isEmpty()) {
+                new ErrorPopup("Nazwa miejscowoÅ›ci nie moÅ¼e byÄ‡ pusta");
+            } else if (nu.postCodeValue.getText().isEmpty()) {
+                new ErrorPopup("Numer kodu nie moÅ¼e byÄ‡ pusty");
+            } else {
 				// Users user = new Users();
 				Users user;
 				try {
 					user = userDAO.findByLogin(nu.loginValue.getText());
 					if (user.getLogin().equals(nu.loginValue.getText())) {
-						new ErrorPopup("Podany u¿ytkownik ju¿ istnieje");
-					}
+                        new ErrorPopup("Podany uÅ¼ytkownik juÅ¼ istnieje");
+                    }
 
 				} catch (NoResultException exept) {
 					user = new Users();
@@ -83,15 +77,15 @@ public class AddUserButtonHandler implements ActionListener {
 					employee.setAddress(address);
 					employee = employeeDAO.save(employee);
 					user.setEmployee(employee);
-					// TODO: dorobiæ jakiœ ciekawy mechanizm nadawania roli
-					user.setRole(roleDAO.findByName("U¿ytkownik"));
-					String uncodedpass = encService.generateRandomPassword();
+                    // TODO: dorobi? jaki? ciekawy mechanizm nadawania roli
+                    user.setRole(roleDAO.findByName("UÅ¼ytkownik"));
+                    String uncodedpass = encService.generateRandomPassword();
 					mailService.send(user.getEmail(), uncodedpass);
 					user.setPassword(passwordDAO.save(encService
 							.encryptPassword(uncodedpass)));
 					user = userDAO.save(user);
-					new ErrorPopup("Dodano u¿ytkownika: " + user.getLogin());
-					nu.nameValue.setText("");
+                    new ErrorPopup("Dodano uÅ¼ytkownika: " + user.getLogin());
+                    nu.nameValue.setText("");
 					nu.surnameValue.setText("");
 					nu.emailValue.setText("");
 					nu.idValue.setText("");
