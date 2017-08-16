@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ed5b077-99d2-458b-81ed-123498a66077" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/back/Utils/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/listeners/MouseClickedValueListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/frames/ApplicationWindow.class" afterPath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/frames/ApplicationWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/frames/ErrorPopup.class" afterPath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/frames/ErrorPopup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/listeners/AddLicenseButtonHandler.class" afterPath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/listeners/AddLicenseButtonHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/listeners/AddUserButtonHandler.class" afterPath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/listeners/AddUserButtonHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/listeners/MainWindowButtonHandler.class" afterPath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/listeners/MainWindowButtonHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/listeners/MainWindowFocusHandler.class" afterPath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/listeners/MainWindowFocusHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/listeners/ResetPasswordButtonHandler.class" afterPath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/listeners/ResetPasswordButtonHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/panels/AddLicense.class" afterPath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/panels/AddLicense.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/panels/ViewInvoice.class" afterPath="$PROJECT_DIR$/bin/wat/edu/pl/pz/gui/front/panels/ViewInvoice.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/jaf_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jaf_1_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FaktTheWorld.iml" afterPath="$PROJECT_DIR$/FaktTheWorld.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/frames/ErrorPopup.java" afterPath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/frames/ErrorPopup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/listeners/AddLicenseButtonHandler.java" afterPath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/listeners/AddLicenseButtonHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/listeners/AddUserButtonHandler.java" afterPath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/listeners/AddUserButtonHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/listeners/MainWindowButtonHandler.java" afterPath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/listeners/MainWindowButtonHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/listeners/MainWindowFocusHandler.java" afterPath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/listeners/MainWindowFocusHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/listeners/ResetPasswordButtonHandler.java" afterPath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/listeners/ResetPasswordButtonHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/panels/AddLicense.java" afterPath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/panels/AddLicense.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/panels/ViewInvoice.java" afterPath="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/panels/ViewInvoice.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,11 +18,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AddLicense.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddLicense.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/panels/AddLicense.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
+            <state relative-caret-position="-97">
               <caret line="114" column="90" lean-forward="false" selection-start-line="114" selection-start-column="90" selection-end-line="114" selection-end-column="90" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jaf_1_1.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/libraries/jaf_1_1.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="60" lean-forward="false" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -89,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/listeners/MouseClickedValueListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
-              <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+              <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#394#395#0" expanded="true" />
@@ -107,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/frames/ErrorPopup.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="151">
-              <caret line="58" column="47" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+              <caret line="59" column="53" lean-forward="false" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -159,6 +148,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Daniel Przybytniak &lt;daniel.przybytniak@student.wat.edu.pl&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
@@ -179,6 +173,7 @@
         <option value="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/back/Utils/Constants.java" />
         <option value="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/listeners/MouseClickedValueListener.java" />
         <option value="$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/panels/AddLicense.java" />
+        <option value="$PROJECT_DIR$/.idea/libraries/jaf_1_1.xml" />
       </list>
     </option>
   </component>
@@ -323,7 +318,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.startup.tasks" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/commons-lang3-3.6" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="SearchEverywhereHistoryKey" value="Add&#9;PSI&#9;JAVA://wat.edu.pl.pz.gui.front.panels.AddLicense" />
+    <property name="SearchEverywhereHistoryKey" value="jaf&#9;FILE&#9;file://C:/Projekt/dprzybytniak/LicenseManager/.idea/libraries/jaf_1_1.xml&#10;Add&#9;PSI&#9;JAVA://wat.edu.pl.pz.gui.front.panels.AddLicense" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -392,6 +387,18 @@
       </option>
       <envs />
       <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="FaktTheWorld" />
+      <envs />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -673,19 +680,6 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="FaktTheWorld" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="filePath" />
@@ -730,6 +724,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6ed5b077-99d2-458b-81ed-123498a66077" name="Default" comment="" />
@@ -740,6 +737,14 @@
       <workItem from="1495389480150" duration="1668000" />
       <workItem from="1502903872830" duration="6000" />
     </task>
+    <task id="LOCAL-00001" summary="Dodałem jakieś walidatory itp, ładny komunikat walidacyjny, podświetlenie pól bez walidacji, odznaczenie pól bez walidacji na mouseclicka">
+      <created>1502915118609</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1502915118610</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -754,10 +759,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.50835073" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908705" sideWeight="0.5062631" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.49164927" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.49373695" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -786,6 +791,14 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Dodałem jakieś walidatory itp, ładny komunikat walidacyjny, podświetlenie pól bez walidacji, odznaczenie pól bez walidacji na mouseclicka" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodałem jakieś walidatory itp, ładny komunikat walidacyjny, podświetlenie pól bez walidacji, odznaczenie pól bez walidacji na mouseclicka" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -970,7 +983,7 @@
     <entry file="file://$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/frames/ErrorPopup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
-          <caret line="58" column="47" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+          <caret line="59" column="53" lean-forward="false" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1005,7 +1018,7 @@
     <entry file="file://$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/listeners/MouseClickedValueListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#394#395#0" expanded="true" />
@@ -1039,8 +1052,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wat/edu/pl/pz/gui/front/panels/AddLicense.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
+        <state relative-caret-position="-97">
           <caret line="114" column="90" lean-forward="false" selection-start-line="114" selection-start-column="90" selection-end-line="114" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/jaf_1_1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="60" lean-forward="false" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
           <folding />
         </state>
       </provider>
